@@ -19,3 +19,12 @@ This folder contains the frontend code for our application. The frontend is buil
 - ```/pages```: All the pages used in the App.
 - ```/reducers```: ```CourseReducer.js``` for the Redux
 -```/store```: ```store.js``` having intialized store for Redux
+
+# Preview
+![image](https://github.com/Parikshitdeore/React-assignment/assets/113280255/fd7dc4cd-b102-4399-8dff-3d30c8bc5166)
+![image](https://github.com/Parikshitdeore/React-assignment/assets/113280255/fd775725-402b-4bab-b3fc-bc9ae529b6a4)
+![image](https://github.com/Parikshitdeore/React-assignment/assets/113280255/d8c60cdf-2c71-44b4-bb63-96c3b69f4b7f)
+![image](https://github.com/Parikshitdeore/React-assignment/assets/113280255/bde1e529-6073-48be-8924-5c227ab80dff)
+
+
+
