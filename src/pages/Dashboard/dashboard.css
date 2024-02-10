@@ -1,0 +1,21 @@
+.dashboard-container {
+  width: 90%;
+  margin: auto;
+}
+.dashboard-page {
+  display: flex;
+  gap: 3em;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.dashboard-page,
+h2 {
+  margin: 2em auto;
+  padding: 0.1em 0.5em;
+}
+@media screen and (max-width: 768px) {
+  .dashboard-page {
+    margin: 0.5em auto;
+    gap: 1em;
+  }
+}

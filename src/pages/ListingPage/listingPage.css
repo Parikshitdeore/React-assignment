@@ -1,0 +1,39 @@
+.listing-page-container {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 80%;
+  margin: auto;
+}
+.courses-container {
+}
+.listing-page input,
+h2 {
+  width: 50%;
+  display: flex;
+  margin: 2em auto;
+  padding: 0.7em 1.5em;
+  justify-content: center;
+}
+.listing-page input {
+  background-color: black;
+  color: white;
+  border: rgb(87, 87, 87) 1px solid;
+  border-radius: 5px;
+}
+@media screen and (max-width: 1024px) {
+  .listing-page input,
+  h2 {
+    width: 70%;
+  }
+  .listing-page-container {
+    width: 100%;
+  }
+  .courses-container {
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5em;
+    justify-content: center;
+  }
+}
