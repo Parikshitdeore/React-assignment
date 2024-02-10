@@ -20,8 +20,8 @@ const courseReducer = (state, action) => {
     case "UPDATE_SEARCH": {
       const searchedData = state.data.filter(
         (course) =>
-          course.name.toLowerCase().includes(action.payload) ||
-          course.instructor.toLowerCase().includes(action.payload)
+          course.name.toLowerCase().includes(action.payload.toLowerCase()) ||
+          course.instructor.toLowerCase().includes(action.payload.toLowerCase)
       );
       return { ...state, searchedData: searchedData, search: action.payload };
     }
@@ -38,12 +38,15 @@ const courseReducer = (state, action) => {
 
     case "ENROLL": {
       const course = action.payload;
-      const ec = state.data.find((ec) => ec.id === course.id);
+      const ec = state.data.find((e) => e.id === course.id);
       let newData = [
         ...state.data.filter((c) => c.id !== ec.id),
         { ...ec, enrolled: true },
       ];
-      let newEc = newData.filter((c) => c.enrolled);
+      let newEc = [
+        ...state.enrolledCourses.filter((c) => c.enrolled),
+        { ...ec, enrolled: true },
+      ];
       return {
         ...state,
         data: [...newData],
